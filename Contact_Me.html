@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">Home</a> |
+        <a href="Education.html">Education</a> |
+        <a href="Weekly_Schedule.html">Weekly Schedule</a> |
+        <a href="Contact_Me.html">Contact Me</a>
+        <a href="Questionnaire_page.html">Questionnary Page</a>
+    </nav>
+
+    <h1>Contact Me</h1>
+
+    <form>
+        <label for "firstname"  > First Name: </label>
+        <input type="text" id="firstname" pattern="[A-Za-z\s]+" required> <br>
+
+        <label for "lastname" > Last Name: </label>
+        <input type="text" id="lastname" pattern="[A-Za-z\s]+" required> <br>
+
+        <label for "email"> Email: </label>
+        <input type="text" id="email" required> <br>
+
+        <label>Gender: 
+            <input type="radio" id="male" name="gender" value="MALE" >
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="FEMALE">
+            <label for="female">Female</label><br>
+        </label> <br>
+
+        <lable> Requests:
+            <input type="checkbox" id="call" name="Requests" value="call">
+            <label for="call">Call</label>
+            <input type="checkbox" id="more information" name="Requests" value="more information">
+            <label for="more information">More information</label>
+            <input type="checkbox" id="feedback" name="Requests" value="feedback">
+            <label for="feedback">Feedback</label><br><br>
+        </lable>
+
+        <label for="topic">Topic:</label><br>
+        <select id="topic" name="Topic">
+            <option value="General">General</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Support">Support</option>
+        </select><br><br>
+
+        <label for="message">Suggesions for improwing Web </label><br>
+        <textarea id="message" name="Message" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit>" />
+        <form action="mailto: ealiyeva17624@ada.edu.az" method="post" enctype="text/plain"></form>
+    </form>
+</body>
+</html>
